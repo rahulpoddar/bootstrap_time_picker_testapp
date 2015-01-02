@@ -1,0 +1,36 @@
+Add this gem to your gemfile
+
+gem 'bootstrap-sass', '~> 2.3.2.0'
+gem 'bootstrap-timepicker-rails-addon'
+
+Add this to application.js
+
+//= require bootstrap-timepicker
+
+Add this to application.css
+
+ *= require bootstrap-timepicker
+
+Go to your view and add this HTML
+
+<div class="input-append bootstrap-timepicker">
+  <input id="timepicker" type="text" class="input-small">
+  <span class="add-on"><i class="icon-time"></i></span>
+</div>
+
+And add this jquery
+<script>
+	$('#timepicker').timepicker();
+</script>
+
+(Make sure to put the jquery under your input tag or it won't work)
+
+Add bootstrap 2.2.2 with a CDN or find a Gem.
+
+Here is the CDN
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/2.2.2/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/2.2.2/css/bootstrap-theme.min.css">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/2.2.2/js/bootstrap.min.js"></script>
+
+It will actually also work with the lastest version of bootstrap. But looks kinda bugged.
